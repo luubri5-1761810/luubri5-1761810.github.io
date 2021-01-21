@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>McDonald's PHD Application</title>
+</head>
+<body>
+<h2>McDonald's PhD Application</h2>
+<form action="http://gclass.alexburner.com/formtest.php" method="post">
+
+
+
+	<fieldset>
+		<legend>Personal Information</legend>
+		<div class="field">
+			<label>First Name:</label> 
+			<input type="text" name="firstname"><br>
+			<label>Last Name:</label>
+			<input type="text" name="lastname">
+		</div>
+		<div class="field">
+			<label>Year of Graduation:</label>
+			<select name="year">
+			<option value="" selected="true">Choose a year</option>
+				<option value="19">2019</option>
+				<option value="20">2020</option>
+				<option value="21">2021</option>
+				<option value="22">2022</option>
+			</select>
+		</div>
+		<div class="field">
+			<label>Gender:</label><br>
+			<input type="radio" name="gender" value="female"> Female<br>
+      		<input type="radio" name="gender" value="male"> Male<br>
+      		<input type="radio" name="gender" value="other"> Other
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Grade</legend>
+		<div class="field">
+			<label>Do you you like McDonald's Breakfast</label> 
+			
+        </div>
+        <input type="radio" name="legal" value="yes">Yes
+			<input type="radio" name="legal" value="no">No
+		<div class="field">
+			<label>Select Favorite McDonalds item(s) (select up to 3): </label>
+
+				<li><input type="checkbox" name="degree" value="BA">McChicken</li>
+				<li><input type="checkbox" name="degree" value="BS">Big Mac</li>
+				<li><input type="checkbox" name="degree" value="BA">Fries</li>
+				<li><input type="checkbox" name="degree" value="BS">Snack Wrap</li>
+				<li><input type="checkbox" name="degree" value="BA">Egg McMuffin</li>
+                <li><input type="checkbox" name="degree" value="BS">Baked Apple Pie</li>
+                <li><input type="checkbox" name="degree" value="BS">Chicken McNuggets</li>
+
+		</div>
+
+	</fieldset>
+    <fieldset>
+		<legend>Availability</legend>
+    <div class="field">
+        <label>Hours available:</label>
+        <label>(All McDonalds PhD Students are required to work 40 hours a week at 
+            a local McDonalds location of their choosing.)</label>
+        <table>
+            <tr>
+                <td></td>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+            <tr>
+                <th>From</th>
+                <td><input type="time" size="5" name="su_from"></td>
+                <td><input type="time" size="5" name="mo_from"></td>
+                <td><input type="time" size="5" name="tu_from"></td>
+                <td><input type="time" size="5" name="we_from"></td>
+                <td><input type="time" size="5" name="th_from"></td>
+                <td><input type="time" size="5" name="fr_from"></td>
+                <td><input type="time" size="5" name="sa_from"></td>
+            </tr>
+            <tr>
+                <th>Until</th>
+                <td><input type="time" size="5" name="su_until"></td>
+                <td><input type="time" size="5" name="mo_until"></td>
+                <td><input type="time" size="5" name="tu_until"></td>
+                <td><input type="time" size="5" name="we_until"></td>
+                <td><input type="time" size="5" name="th_until"></td>
+                <td><input type="time" size="5" name="fr_until"></td>
+                <td><input type="time" size="5" name="sa_until"></td>
+            </tr>
+        </table>
+    </div>
+</fieldset>
+
+	<fieldset>
+		<legend>Personal Statement</legend>
+		<div class="field">
+			<label>Why do you like McDonald's? </label><br>
+			<textarea name="choose" rows="6" cols="60"></textarea>
+		</div>
+		<div class="field">
+			<label>What differentiates you from other McDonald's enthusiasts?</label><br>
+			<textarea name="project" rows="6" cols="60"></textarea>
+        </div>
+        <div class="field">
+			<label>Describe a recent McDonald's experience you have had:</label><br>
+			<textarea name="project" rows="6" cols="60"></textarea>
+		</div>
+		<div class="field">
+			<label>Additional Information that you would like us to know:</label><br>
+			<textarea name="project" rows="6" cols="60">Example: how many chicken nuggets you can eat in one sitting</textarea>
+		</div>
+	</fieldset>
+
+	<input type="submit" value="Submit form">
+</form>
+</body>
+</html>
